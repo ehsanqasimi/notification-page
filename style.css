@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.material-icons {
+  color: transparent;
+}
+
+.message {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  padding: 15px;
+  border-radius: 5px;
+  color: hsl(219deg, 12%, 42%);
+  margin-block: 10px;
+}
+
+.container {
+  padding: 40px;
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header .notification {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(224deg, 21%, 14%);
+}
+.container .header .notification .count {
+  background-color: hsl(219deg, 85%, 26%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.container .header .mark {
+  cursor: pointer;
+  color: hsl(219deg, 14%, 63%);
+}
+.container .users {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.container .users .user {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 20px;
+  cursor: pointer;
+}
+.container .users .user img {
+  width: 10%;
+}
+.container .users .user .detail .name {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 700;
+}
+.container .users .user .detail .name .action {
+  font-weight: 300;
+  color: hsl(219deg, 14%, 63%);
+}
+.container .users .user .detail .name .title {
+  font-weight: 600;
+  color: hsl(219deg, 12%, 42%);
+}
+.container .users .user .detail .when {
+  color: hsl(219deg, 14%, 63%);
+}
+.container .users .userBackground {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.container .users .userBackground .detail .name .material-icons {
+  color: hsl(1deg, 90%, 64%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210deg, 60%, 98%);
+  }
+  .container {
+    width: 50%;
+    border-radius: 5px;
+    background-color: hsl(0deg, 0%, 100%);
+    margin-block: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
